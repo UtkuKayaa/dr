@@ -1,18 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gülen Medikal</title>
-    <link rel="stylesheet" href="styles.css"> <!-- CSS dosyasını dışarıdan bağlayabilirsiniz -->
+    <title>Doktor Web Sitesi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="hero">
-        <div class="hero-text">
-            <h1>Gülen Medikale Hosgeldiniz</h1>
-            
-           
+
+    <!-- Üst Bilgi (Header) ve Navigasyon Menüsü -->
+    <div class="header">
+        <div class="header-logo">
+            <img src="https://via.placeholder.com/40" alt="Doktor Logosu">
+            <h2>Doktor Bul Derdime Bir Çare</h2>
+        </div>
+
+        <div class="navbar-menu">
+            <a href="#anasayfa">Ana Sayfa</a>
+            <a href="#hakkimda">Hakkımda</a>
+            <a href="#hizmetler">Hizmetler</a>
+            <a href="#yorumlar">Hasta Yorumları</a>
+            <a href="#iletisim">İletişim</a>
         </div>
     </div>
+
+    <!-- Ana İçerik -->
+    <div class="content" id="anasayfa">
+        <div class="content-box">
+            <h1>Hoşgeldiniz</h1>
+            <p></p>
+            <button class="randevu-button">Randevu Al</button>
+        </div>
+    </div>
+
+    <!-- Hakkımda Bölümü -->
+    <section class="about-section" id="hakkimda">
+        <div class="about-text">
+            <h2>Hakkımda</h2>
+            <p>Dr. Ayşe Yılmaz, 2005 yılında İstanbul Üniversitesi Psikoloji bölümünden mezun olmuş, 2010 yılında ise Çocuk Psikolojisi alanında yüksek lisansını tamamlamıştır. 15 yılı aşkın süredir çocuk psikolojisi üzerine çalışmakta, özellikle çocuklarda duygusal ve davranışsal sorunların tedavisiyle ilgilenmektedir.</p>
+            <p>Kariyeri boyunca oyun terapisi, bilişsel davranışçı terapi ve aile danışmanlığı konularında birçok eğitim ve seminerlere katılmıştır. 2012 yılında "Oyun Terapisinin Çocuk Gelişimine Etkileri" başlıklı çalışmasıyla ödül almış ve çocuk terapilerinde önemli katkılarda bulunmuştur.</p>
+        </div>
+        <div class="about-photo">
+            <img src="images/profil.jpg" alt="Dr. Ayşe Yılmaz">
+        </div>
+    </section>
+
+    <!-- Hizmetler Bölümü -->
+    <section class="services-section" id="hizmetler">
+        <h2>Hizmetler</h2>
+        <div class="sections">
+            <div class="section-box" data-description="Çocuklarda duygusal gelişimi desteklemek için oyun terapisi ve danışmanlık hizmeti.">Çocuklarda Duygusal Gelişim</div>
+            <div class="section-box" data-description="Oyun terapisinin çocukların sosyal ve duygusal becerilerine katkısı üzerine uzmanlaşmış terapiler.">Oyun Terapisi</div>
+            <div class="section-box" data-description="Ailelerin çocuklarıyla olan iletişimlerini güçlendirmek için rehberlik hizmetleri.">Aile Danışmanlığı</div>
+            <div class="section-box" data-description="Çocukların davranışsal sorunlarına yönelik bireysel tedavi planları.">Davranışsal Terapi</div>
+        </div>
+    </section>
+
+    <!-- İletişim Bölümü -->
+    <section class="contact-section" id="iletisim">
+        <h2>İletişim</h2>
+        <p>Bana ulaşmak için formu doldurabilirsiniz.</p>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
